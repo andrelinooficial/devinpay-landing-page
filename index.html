@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevinPay - Payments driven by AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-[#000000] text-[#FFFFFF] selection:bg-[#2563EB] selection:text-white overflow-x-hidden">
+  
+  <!-- Efeitos Visuais de Background (Radial Premium Estilo Cakto) -->
+  <div class="fixed inset-0 z-0 pointer-events-none">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_-20%,#2563eb15,transparent)]"></div>
+  </div>
+
+  <!-- 1. Navbar -->
+  <div class="absolute top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 lg:px-8 pointer-events-none">
+    <nav class="w-full max-w-7xl bg-[#0A0A0A]/90 backdrop-blur-md rounded-md h-16 flex items-center justify-between px-6 sm:px-8 pointer-events-auto transition-all">
+      <div class="flex items-center gap-2 cursor-pointer">
+        <div class="w-8 h-8 rounded-lg bg-[#2563EB] flex items-center justify-center">
+          <i data-lucide="zap" class="w-5 h-5 text-white fill-white"></i>
+        </div>
+        <span class="text-xl font-semibold tracking-tight">DevinPay</span>
+      </div>
+      
+      <div class="hidden md:flex items-center gap-8 text-[#94A3B8] text-sm font-medium">
+        <a href="#recursos" class="hover:text-white transition-colors">Recursos</a>
+        <a href="#como-funciona" class="hover:text-white transition-colors">Como funciona</a>
+        <a href="#integracoes" class="hover:text-white transition-colors">Integrações</a>
+        <a href="#precos" class="hover:text-white transition-colors">Preços</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+      </div>
+
+      <div class="hidden md:flex items-center">
+        <button class="bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-5 py-2.5 rounded-md text-sm font-medium transition-all transform hover:scale-105">
+          Acessar conta
+        </button>
+      </div>
+      
+      <button class="md:hidden text-[#94A3B8]">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </nav>
+  </div>
+
+  <main class="relative z-10 pt-32">
+    
+    <!-- Efeito Tecnológico Animado -->
+    <div class="absolute top-0 -right-60 w-[700px] h-[700px] bg-blue-600/10 rounded-full blur-3xl animate-slow-pulse -z-10"></div>
+
+    <!-- 2. Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20 lg:pt-16 lg:pb-32">
+      <div class="flex flex-col items-center">
+        
+        <!-- Copy -->
+        <div class="flex flex-col items-center text-center gap-6 max-w-4xl">
+          <div class="animate-on-scroll delay-100 inline-flex items-center gap-2 border border-white/10 bg-white/5 text-gray-300 px-4 py-1.5 rounded-full w-max text-xs sm:text-sm font-medium tracking-wide backdrop-blur-sm">
+            <i data-lucide="brain" class="w-4 h-4"></i>
+            IA que cobra. Você foca no negócio.
+          </div>
+          
+          <h1 class="animate-on-scroll delay-200 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1]">
+            Payments <span class="text-[#60A5FA]">driven by AI.</span>
+          </h1>
+          
+          <p class="animate-on-scroll delay-300 text-lg text-[#94A3B8] max-w-2xl leading-relaxed font-light">
+            Automação inteligente de cobranças Pix, lembretes automáticos e mensagens geradas por IA.
+          </p>
+          
+          <div class="animate-on-scroll delay-400 flex flex-col sm:flex-row gap-4 mt-6">
+            <button class="bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-8 py-3 text-sm rounded-md font-medium transition-all flex items-center justify-center gap-2">
+              Comece grátis agora
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+            <button class="border border-white/10 hover:bg-white/5 text-white px-8 py-3 text-sm rounded-md font-medium transition-all flex items-center justify-center">
+              Ver como funciona
+            </button>
+          </div>
+        </div>
+
+        <!-- Mockup Dashboard -->
+        <div class="scale-in delay-300 relative w-full max-w-6xl mt-16 lg:mt-24">
+          <div class="grid grid-cols-6 gap-4">
+            <!-- Imagens Maiores (Topo) -->
+            <img src="/assets/img/dashboard.png" alt="Dashboard DevinPay" class="col-span-6 lg:col-span-3 w-full h-auto rounded-lg border border-white/10 shadow-lg object-cover">
+            <img src="/assets/img/relatorios.png" alt="Recurso 2 DevinPay" class="col-span-6 lg:col-span-3 w-full h-auto rounded-lg border border-white/10 shadow-lg object-cover">
+            
+            <!-- Imagens Menores (Abaixo) -->
+            <img src="/assets/img/clientes.png" alt="Recurso 3 DevinPay" class="col-span-6 lg:col-span-2 w-full h-auto rounded-lg border border-white/10 shadow-lg object-cover">
+            <img src="/assets/img/relatorios.png" alt="Recurso 4 DevinPay" class="col-span-6 lg:col-span-2 w-full h-auto rounded-lg border border-white/10 shadow-lg object-cover">
+            <img src="/assets/img/saldo.png" alt="Recurso 5 DevinPay" class="col-span-6 lg:col-span-2 w-full h-auto rounded-lg border border-white/10 shadow-lg object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Seção Benefícios -->
+    <section id="como-funciona" class="py-24 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-semibold mb-4 tracking-tight">Projetado para transformação</h2>
+          <p class="text-[#94A3B8] font-light text-lg">Reduza o trabalho manual e aumente sua taxa de conversão.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="animate-on-scroll delay-100 p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-white/10 transition-colors">
+            <div class="relative z-10">
+              <i data-lucide="zap" class="w-7 h-7 text-[#2563EB] mb-5"></i>
+              <h3 class="text-lg font-semibold mb-2">Agilidade</h3>
+              <p class="text-[#94A3B8] text-sm leading-relaxed font-light">Menos tempo cobrando. Mais tempo vendendo.</p>
+            </div>
+          </div>
+          
+          <div class="animate-on-scroll delay-200 p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-white/10 transition-colors">
+            <div class="relative z-10">
+              <i data-lucide="shield-check" class="w-7 h-7 text-[#2563EB] mb-5"></i>
+              <h3 class="text-lg font-semibold mb-2">Redução de inadimplência</h3>
+              <p class="text-[#94A3B8] text-sm leading-relaxed font-light">Cobranças automáticas inteligentes.</p>
+            </div>
+          </div>
+
+          <div class="animate-on-scroll delay-300 p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-white/10 transition-colors">
+            <div class="relative z-10">
+              <i data-lucide="brain" class="w-7 h-7 text-[#2563EB] mb-5"></i>
+              <h3 class="text-lg font-semibold mb-2">Inteligência</h3>
+              <p class="text-[#94A3B8] text-sm leading-relaxed font-light">IA adaptando mensagens automaticamente.</p>
+            </div>
+          </div>
+
+          <div class="animate-on-scroll delay-400 p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-white/10 transition-colors">
+            <div class="relative z-10">
+              <i data-lucide="layout-dashboard" class="w-7 h-7 text-[#2563EB] mb-5"></i>
+              <h3 class="text-lg font-semibold mb-2">Organização</h3>
+              <p class="text-[#94A3B8] text-sm leading-relaxed font-light">Tudo centralizado em um painel simples.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Seção Recursos -->
+    <section id="recursos" class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          
+          <!-- Lista de Recursos -->
+          <div class="flex flex-col gap-10">
+            <div>
+              <h2 class="text-3xl md:text-4xl font-semibold mb-4 tracking-tight">Tudo o que você precisa em um só lugar.</h2>
+              <p class="text-[#94A3B8] font-light text-lg">Nossa IA cuida de toda a jornada do pagamento para você.</p>
+            </div>
+
+            <div class="space-y-8">
+              
+              <div class="animate-on-scroll delay-100 flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center">
+                  <i data-lucide="qr-code" class="w-6 h-6 text-[#2563EB]"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold mb-1">Cobranças Pix</h4>
+                  <p class="text-[#94A3B8] font-light text-sm">Geração instantânea de QR Code e Pix Copia e Cola.</p>
+                </div>
+              </div>
+
+              <div class="animate-on-scroll delay-200 flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center">
+                  <i data-lucide="bell-ring" class="w-6 h-6 text-[#2563EB]"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold mb-1">Lembretes automáticos</h4>
+                  <p class="text-[#94A3B8] font-light text-sm">Notificações antes e após o vencimento.</p>
+                </div>
+              </div>
+
+              <div class="animate-on-scroll delay-300 flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center">
+                  <i data-lucide="message-square" class="w-6 h-6 text-[#2563EB]"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold mb-1">Inteligência Artificial</h4>
+                  <p class="text-[#94A3B8] font-light text-sm">Mensagens amigáveis ou firmes com personalização automática.</p>
+                </div>
+              </div>
+
+              <div class="animate-on-scroll delay-400 flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center">
+                  <i data-lucide="bar-chart-3" class="w-6 h-6 text-[#2563EB]"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold mb-1">Dashboard Analytics</h4>
+                  <p class="text-[#94A3B8] font-light text-sm">Controle de recebimentos, inadimplência e métricas simples.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Dashboard Detalhado / Mockup Mobile -->
+          <div class="scale-in delay-200 relative flex justify-center lg:justify-end">
+            <!-- Mobile Phone Mockup -->
+            <div class="relative w-[300px] h-[600px] bg-[#000000] border-[6px] border-[#1E293B] rounded-[3rem] shadow-2xl overflow-hidden flex flex-col">
+              <div class="w-32 h-6 bg-[#1E293B] absolute top-0 left-1/2 -translate-x-1/2 rounded-b-2xl"></div>
+              
+              <div class="p-6 pt-12 flex-1 flex flex-col gap-6">
+                <div>
+                  <p class="text-sm text-[#94A3B8] mb-1">Saldo Atual</p>
+                  <h3 class="text-3xl font-semibold text-white">R$ 14.500,00</h3>
+                </div>
+                
+                <div class="bg-[#2563EB] rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden">
+                  <i data-lucide="qr-code" class="w-6 h-6 text-white relative z-10"></i>
+                  <div class="relative z-10">
+                     <p class="text-white/80 text-sm">Receber via Pix</p>
+                     <p class="text-white font-medium text-sm">Gerar Cobrança</p>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="text-sm font-semibold mb-3">Próximas cobranças</p>
+                  <div class="space-y-3">
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-[#0A0A0A] border border-white/5">
+                      <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
+                          <i data-lucide="zap" class="w-4 h-4 text-[#60A5FA]"></i>
+                        </div>
+                        <div>
+                          <p class="text-xs font-medium text-white">Cliente 1</p>
+                          <p class="text-[10px] text-[#94A3B8]">Hoje, 14:00</p>
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">R$ 150</p>
+                    </div>
+                    
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-[#0A0A0A] border border-white/5">
+                      <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
+                          <i data-lucide="zap" class="w-4 h-4 text-[#60A5FA]"></i>
+                        </div>
+                        <div>
+                          <p class="text-xs font-medium text-white">Cliente 2</p>
+                          <p class="text-[10px] text-[#94A3B8]">Hoje, 14:00</p>
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">R$ 150</p>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-[#0A0A0A] border border-white/5">
+                      <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
+                          <i data-lucide="zap" class="w-4 h-4 text-[#60A5FA]"></i>
+                        </div>
+                        <div>
+                          <p class="text-xs font-medium text-white">Cliente 3</p>
+                          <p class="text-[10px] text-[#94A3B8]">Hoje, 14:00</p>
+                        </div>
+                      </div>
+                      <p class="text-sm font-semibold">R$ 150</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA Final -->
+    <section class="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="scale-in relative rounded-3xl p-10 md:p-16 text-center border border-white/10 bg-[#0A0A0A] overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,#2563eb15,transparent_70%)]"></div>
+        
+        <div class="relative z-10 flex flex-col items-center">
+          <i data-lucide="brain" class="w-10 h-10 text-[#2563EB] mb-6"></i>
+          <h2 class="text-3xl md:text-4xl font-semibold mb-4 max-w-2xl leading-tight tracking-tight">
+            Comece grátis e veja a IA trabalhando por você.
+          </h2>
+          <p class="text-[#94A3B8] mb-8 max-w-xl font-light">
+            Junte-se ao futuro das finanças. Automação inteligente de cobranças Pix.
+          </p>
+          <button class="bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-10 py-4 rounded-md font-medium transition-all">
+            Criar conta grátis
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="border-t border-white/5 bg-[#000000] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-6 h-6 rounded flex items-center justify-center bg-[#2563EB]">
+              <i data-lucide="zap" class="w-3.5 h-3.5 text-white fill-white"></i>
+            </div>
+            <span class="text-lg font-semibold tracking-tight">DevinPay</span>
+          </div>
+          <p class="text-[#94A3B8] text-sm font-light leading-relaxed">
+            Automação inteligente de cobranças Pix.<br/> Payments driven by AI.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="font-medium text-white mb-4">Produto</h4>
+          <ul class="space-y-3 text-sm text-[#94A3B8]">
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">Recursos</a></li>
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">Preços</a></li>
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-medium text-white mb-4">Empresa</h4>
+          <ul class="space-y-3 text-sm text-[#94A3B8]">
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">Sobre</a></li>
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">Blog</a></li>
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">Contato</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-medium text-white mb-4">Suporte</h4>
+          <ul class="space-y-3 text-sm text-[#94A3B8]">
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">FAQ</a></li>
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">Termos de uso</a></li>
+            <li><a href="#" class="hover:text-[#60A5FA] transition-colors">Privacidade</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-[#94A3B8] font-light">
+        <p>© 2024 DevinPay. Todos os direitos reservados.</p>
+        <div class="flex items-center gap-4 mt-4 md:mt-0">
+          <span class="w-2 h-2 rounded-full bg-green-500"></span> All systems operational
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
