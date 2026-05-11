@@ -65,3 +65,15 @@ html {
 .animate-slow-pulse {
   animation: slow-pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* Animação de Rolagem Infinita (Marquee - Integrações) */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  /* Animação linear de 25s repetindo infinitamente */
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}

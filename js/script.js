@@ -22,4 +22,27 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('.animate-on-scroll, .scale-in').forEach(el => {
     observer.observe(el);
   });
+
+  // Navegação suave interceptada (Remove o # da URL)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Impede o comportamento padrão de colocar o # na URL
+      
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        // Faz a rolagem suave até a seção
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+
+        // Mantém a URL limpa na raiz (ex: apenas site.com) para evitar o erro 404 (Cannot GET /secao)
+        // caso o usuário atualize a página (F5) ou tente acessar o link diretamente.
+        window.history.pushState(null, '', window.location.pathname);
+      }
+    });
+  });
 });
