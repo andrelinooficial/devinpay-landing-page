@@ -2,10 +2,13 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Custom Scrollbar */
