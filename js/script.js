@@ -45,4 +45,25 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Lógica do botão "Voltar ao Topo"
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  window.addEventListener('scroll', () => {
+    // Mostra o botão se a rolagem passar de 400 pixels
+    if (window.scrollY > 400) {
+      backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+      backToTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+    } else {
+      backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
